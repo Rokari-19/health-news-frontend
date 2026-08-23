@@ -1,11 +1,18 @@
-<script setup></script>
+<script setup>
+import AppHeader from './components/AppHeader.vue'
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <div class="app-root">
+    <AppHeader />
+    <main class="app-main">
+      <RouterView />
+    </main>
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <span>HealthWaka</span>
+        <span>Health information should be understandable.</span>
+      </div>
+    </footer>
+  </div>
 </template>
-
-<style scoped></style>
